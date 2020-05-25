@@ -1,0 +1,42 @@
+#slider{
+overflow: hidden;
+width: 100%;
+left:25%;
+}
+
+#slider figure{
+position: relative;
+width: 1000%;
+margin: 0;
+left: 0;
+animation: 20s slider infinite;
+}
+
+#slider figure img{
+height: 100%;
+width: 10%;
+float: left;
+
+}
+
+@keyframes slider{
+   0% {left: 0;}
+   5.2% {left: 0;}
+   10.4% {left: -100%;}
+   15.6% {left: -100%;}
+   20.8% {left: -200%;}
+   26% {left: -200%;}
+   31.2% {left: -300%;}
+   36.4% {left: -300%;}
+   41.6% {left: -400%;}
+   46.8% {left: -400%;}
+   52% {left: -500%;}
+   57.2% {left: -500%;}
+   62.4% {left: -600%;}
+   67.6% {left: -600%;}
+   72.8% {left: -700%;}
+   78% {left: -700%;}
+   85% {left: -800%;}
+   90% {left: -800%;}
+   100% {left: -900%;}
+}

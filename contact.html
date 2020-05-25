@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    	body{
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+}
+nav{
+  width: 100%;
+  height: 70px;
+  background-color: dodgerblue;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+  line-height: 70px;
+  text-align: center;
+  width: 120px;
+  margin-left: 1%;
+  display: inline-block;
+}
+nav a:hover{
+  background: #fff;
+  color: dodgerblue;
+}
+
+#contact{
+  position: relative;
+  color: #f2f2f2;
+}
+#contact::before{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('../c.jpeg') no-repeat center center/cover;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: 'Bree Serif', serif;
+}
+
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  position: absolute;
+  margin-left:620px;
+    margin-top:-35px;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+/*body{
+    background-image : url('i6.jpeg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+    background-attachment : fixed;
+  }*/
+  img{
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  size: cover;
+
+}
+   </style>
+  </head>
+    <body>
+      <nav>
+          <a href="index1.html">Home</a>
+          <a href="upload.html">Upload</a>
+          <a href="contact.htm">Contact Us</a>
+          <a href="index.html">Log Out</a>
+       </nav>
+
+
+       <img src="login7.jpeg" alt="Food"> 
+        <section id="contact">
+
+      <h1 class="h-primary center" align="center" style="color: black">Contact Us</h1>
+
+      <div id="contact-box">
+
+        <form action="">
+          <div class="form-group">
+            <label for="name" style="color: black">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email" style="color: black">Email: </label>
+            <input type="email" name="name" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="phone" style="color: black">Phone Number: </label>
+            <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+          </div>
+          <div class="form-group">
+            <label for="message" style="color: black">Message: </label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+        </form>
+      </div>
+      <form action="contact.html">
+      <input type="submit" value="submit" class="btn">
+    </form>
+    </section>
+
+      </body>
+    </html>
