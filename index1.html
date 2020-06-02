@@ -88,6 +88,69 @@ footer{
   color: white;
   padding: 9px 20px;
 } 
+      
+.box-area{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.single-box{
+  border: 2px solid brown;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+.img-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height:80px;
+  border:6px solid #ddd;
+  border-radius: 80%;
+  margin-bottom: 10px;
+  padding: 20px;
+  -webkit-background-size: cover;
+  background-size: center center;
+}
+.single-box:nth-child(1) .img-area{
+  background-image: url(food1.jpeg);
+}
+.single-box:nth-child(2) .img-area{
+  background-image: url(food2.jpeg);
+}
+.single-box:nth-child(3) .img-area{
+  background-image: url(food3.jpeg);
+}
+.header-text{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.img-text{
+  /*font-family:Poppins;*/
+  padding-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+.img-text p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  font: italic bold 12px/30px Georgia, serif
+}
+      
+
    <img src="i6.jpeg"> </style>
   </head>
     <body>
@@ -114,7 +177,7 @@ footer{
    </figure>
 </div>
 
-<section>
+<!-- <section>
           <div id="services">
             <div class="box">
               <img src="food1.jpeg" alt="">
@@ -133,7 +196,37 @@ footer{
             </div>
          </div>   
     </section>
+ -->
+      
+      <div class="box-area">
+    <div class="single-box">
+      <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text"><strong>South Indian</strong></span>
+          <p>The similarities among the five states' cuisines include the presence of rice as a staple food, the use of lentils and spices, dried red chilies and fresh green chilies, coconut, and native fruits and vegetables including tamarind, plantain, snake gourd, garlic, and ginger.</p>
+        </div>
+      </div>
 
+    <div class="single-box">
+      <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text"><strong>North Indian</strong></span>
+          <p>The similarities among the five states' cuisines include the presence of rice as a staple food, the use of lentils and spices, dried red chilies and fresh green chilies, coconut, and native fruits and vegetables including tamarind, plantain, snake gourd, garlic, and ginger.</p>
+        </div>
+      </div>
+
+    <div class="single-box">
+      <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text"><strong>Chinese</strong></span>
+          <p>The similarities among the five states' cuisines include the presence of rice as a staple food, the use of lentils and spices, dried red chilies and fresh green chilies, coconut, and native fruits and vegetables including tamarind, plantain, snake gourd, garlic, and ginger.</p>
+        </div>
+      </div>
+    </div>
+      
+      
+      
+      
 <h5>       Famous for its native-style and “nuot-sarap” Chicken Inasal with its pioneering “unlimited rice”, Mang Inasal quickly won the hearts of its customers with its distinctively Pinoy stamp-grilling and special marinade made out of local secret spices.Upload the food you like and try the other recepies uploaded in the site.</h5>
 <footer>
       <div class="center">
